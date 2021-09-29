@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    display: grid;
+    height: 0vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav nav nav"
+    ". picture ."
+    ". articles ."
+    "footer footer footer";
+    font-family: 'Roboto', sans-serif;
+}
+  
+.nav {
+    grid-area:nav;
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    margin-bottom:20px;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin:0px;
+}
+
+.nav li {
+    float: left;
+    color: white;
+    text-align:center;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.nav li a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    height: 20%;
+    width: 400%;
+    background-position: center;
+    background-size: cover;
+    position:static;
+}
+
+.theater-pic {
+    grid-area: articles;
+    display: block;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: auto;
+    width: 15%;
+}
+
+.article-text {
+    grid-area: articles;
+    display: block;
+    margin-top: 5px;
+    margin-left: 800px;
+    width: 15%;
+}
+
+button {
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(231, 193, 24);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    grid-area: articles;
+    display: block;
+    margin-left: 1000px;
+    width: 15%;
+}
+
+footer {
+    background-color: black;
+    grid-area:footer;
+    width: 100vw;
+    height: 200px;
+    color: white;
+    
+}
+footer ul {
+    list-style-type: none;
+    
+}
+.map {
+    width: 10%;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
